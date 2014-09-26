@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.villagehealth.pe"
+    android:versionCode="0"
+    android:versionName="0.2" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="20" />
+
+    <application
+        android:name="com.villagehealth.pe.MainApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/DaVita_AppTheme" >
+        <activity
+            android:name="com.villagehealth.pe.welcome.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.villagehealth.pe.terms.TermsAndConditionsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.villagehealth.pe.login.verification.CodeVerificationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.villagehealth.pe.login.PasswordConfirmActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.villagehealth.pe.login.PatientLoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.villagehealth.pe.login.createacc.PatientCreateAccActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.villagehealth.pe.login.forgotpwd.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.villagehealth.pe.login.forgotpwd.ChangePasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.villagehealth.pe.dashboard.DashboardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.villagehealth.pe.login.verification.CPValidationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.villagehealth.pe.login.CPLoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.villagehealth.pe.login.createacc.CPCreateAccActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.villagehealth.pe.login.RememberLoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.villagehealth.pe.CarePartnerBaseActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.villagehealth.pe.BaseActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.villagehealth.pe.PatientBaseActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>
